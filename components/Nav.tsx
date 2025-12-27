@@ -4,40 +4,47 @@ import React from 'react'
 
 const Nav = () => {
     return (
-        <View style={styles.con}>
-            <View style={styles.icons}>
-                
-                <Pressable style={styles.btn} onPress={() => {
-                    alert('hello i am girish');
-                }}>
-                    <House color='white' size='30' />
-                </Pressable>
-                
-                <Pressable style={styles.btn} onPress={() => {
-                    alert('hello i am girish');
-                }}>
-                    <TvMinimal color='white' size='30' />
-                </Pressable>
-                
-                <Pressable style={styles.btn} onPress={() => {
-                    alert('hello i am girish');
-                }}>
-                    <Search color='white' size='30' />
-                </Pressable>
-                
-                <Pressable style={styles.btn} onPress={() => {
-                    alert('hello i am girish');
-                }}>
-                    <Popcorn color='white' size='30' />
-                </Pressable>
 
-                <Pressable style={styles.btn} onPress={() => {
-                    alert('hello i am girish');
-                }}>
-                    <User color='white' size='30' />
-                </Pressable>
+        <>
+            <View style={{ justifyContent: 'center', flex: 1, flexDirection: 'row', padding: 20, position: 'absolute' }}>
+                <Text style={{ fontSize: 30, color: 'white' }}>CINE </Text><Text style={{ fontSize: 30, color: 'red', fontWeight: 900 }}>FLIX</Text>
             </View>
-        </View>
+
+            <View style={styles.con}>
+                <View style={styles.icons}>
+
+                    <Pressable style={styles.btn} onPress={() => {
+                        alert('hello i am girish');
+                    }}>
+                        <House color='white' size='30' />
+                    </Pressable>
+
+                    <Pressable style={styles.btn} onPress={() => {
+                        alert('hello i am girish');
+                    }}>
+                        <TvMinimal color='white' size='30' />
+                    </Pressable>
+
+                    <Pressable style={styles.btn} onPress={() => {
+                        alert('hello i am girish');
+                    }}>
+                        <Search color='white' size='30' />
+                    </Pressable>
+
+                    <Pressable style={styles.btn} onPress={() => {
+                        alert('hello i am girish');
+                    }}>
+                        <Popcorn color='white' size='30' />
+                    </Pressable>
+
+                    <Pressable style={styles.btn} onPress={() => {
+                        alert('hello i am girish');
+                    }}>
+                        <User color='white' size='30' />
+                    </Pressable>
+                </View>
+            </View>
+        </>
     )
 }
 
@@ -67,8 +74,8 @@ const styles = StyleSheet.create({
     },
     btn: {
         // backgroundColor:'#3b3a3aff',
-        padding:5,
-        borderRadius:5
+        padding: 5,
+        borderRadius: 5
     }
 
 })
